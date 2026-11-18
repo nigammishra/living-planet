@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Frontend Ace — Measure the Living Planet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a class="brand" href="#top" aria-label="Frontend Ace home">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 2l12 7v14l-12 7-12-7V9z" fill="currentColor" />
+          <path
+            d="M16 8c-4 4-5 9-1 16 1-5 4-9 8-11-3 0-5 1-7 3 0-3 0-5 0-8z"
+            fill="#c6f35c"
+          />
+        </svg>
+        Frontend Ace
+      </a>
+      <div class="menu">
+        <a href="#sol">Solutions <i class="chev"></i></a
+        ><a href="#story">Our tech <i class="chev"></i></a
+        ><a href="#story">Company <i class="chev"></i></a
+        ><a href="#sol">Resources <i class="chev"></i></a>
+      </div>
+      <a class="talk" href="mailto:nigammishra826@gmail.com"
+        >LET'S TALK <i>›</i></a
+      >
+    </nav>
+    <main id="top">
+      <section id="story">
+        <div class="stage">
+          <div class="cam" id="cam">
+            <canvas id="cv"></canvas
+            ><img
+              class="plate"
+              id="plate"
+              src="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20261106_031618_8ce6dca1-972d-429d-8d13-bf0691c37848.png&w=2400&q=88"
+              alt=""
+            />
+            <div class="mist"></div>
+          </div>
+          <video
+            id="push"
+            muted
+            playsinline
+            preload="auto"
+            crossorigin="anonymous"
+            src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20261106_025717_906b686d-9a9a-4dea-bab4-ae2454f8390e.mp4"
+          ></video>
+          <div class="fog" id="fog">
+            <div class="f0"></div>
+            <div class="f1"></div>
+            <div class="f2"></div>
+          </div>
+          <div class="layer" id="L0">
+            <div class="hero-copy" id="heroCopy">
+              <span class="chip">Planet intelligence</span>
+              <h1>
+                <span class="line"><span>Measure the Living Planet</span></span>
+              </h1>
+            </div>
+          </div>
+          <div class="cam camF" id="camF">
+            <img
+              src="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20261106_031657_baaa3380-5ece-482a-a623-a1838fd7653c.png&w=2400&q=90"
+              alt=""
+            />
+          </div>
+          <div class="rock rk1" data-x="-.3" data-y="-.6" data-d="1.3">
+            <div class="bob">
+              <img
+                src="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20261106_025635_82593f6a-1cf7-41c1-94ac-96fb89ebfd1a.png&w=2400&q=85"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="rock rk3" data-x="1" data-y=".55" data-d="1.8">
+            <div class="bob">
+              <img
+                src="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20261106_025635_82593f6a-1cf7-41c1-94ac-96fb89ebfd1a.png&w=2400&q=85"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="layer" id="L1">
+            <div class="hud" id="hud">
+              <i class="cross"></i><span class="chip">Biodiversity</span>
+              <pre>
+LAT  34.0922° N
+LON 116.2432° W
+ELEV 842 M</pre
+              >
+            </div>
+            <div class="caption" id="caption">
+              Real-time ecosystem insights.<br />Powered by science,
+              blockchain,<br />and transparent data.
+            </div>
+            <div class="hint" id="hint">SCROLL TO EXPLORE <i>⌄</i></div>
+          </div>
+          <div class="layer" id="L2">
+            <div class="vision" id="vision">
+              <span class="chip">Our vision</span>
+              <h2>
+                <span>From</span> <span>Data</span> <span>Chaos</span>
+                <span>to</span><br /><span>Science-Backed,</span><br /><span
+                  >Actionable</span
+                >
+                <span>Insights</span>
+              </h2>
+              <p>
+                A breakthrough in environmental measurement,<br />built for
+                commercial use.
+              </p>
+            </div>
+          </div>
+          <div class="layer" id="L3">
+            <p class="acct" id="acct"></p>
+            <div
+              class="hotspot"
+              style="left: 12%; top: 58%"
+              data-name="Soil carbon"
+              data-value="+3.8 t/ha"
+            >
+              <i class="dot"></i>
+              <div>
+                <div class="hot-label">Soil carbon</div>
+                <em>+3.8 t/ha</em>
+              </div>
+            </div>
+            <div
+              class="hotspot"
+              style="left: 33%; top: 41%"
+              data-name="Canopy moisture"
+              data-value="71 % RH"
+            >
+              <i class="dot"></i>
+              <div>
+                <div class="hot-label">Canopy moisture</div>
+                <em>71 % RH</em>
+              </div>
+            </div>
+            <div
+              class="hotspot"
+              style="left: 70%; top: 66%"
+              data-name="Species index"
+              data-value="214 taxa"
+            >
+              <i class="dot"></i>
+              <div>
+                <div class="hot-label">Species index</div>
+                <em>214 taxa</em>
+              </div>
+            </div>
+            <div
+              class="hotspot"
+              style="left: 83%; top: 47%"
+              data-name="Microclimate"
+              data-value="14.2 °C"
+            >
+              <i class="dot"></i>
+              <div>
+                <div class="hot-label">Microclimate</div>
+                <em>14.2 °C</em>
+              </div>
+            </div>
+          </div>
+          <div class="layer" id="L4">
+            <div class="cred" id="cred">
+              <span class="fieldtag">✕ Field station 07</span>Scientific
+              credibility for corporate climate action
+            </div>
+            <div class="carbon" id="carbon">
+              <h4>Accumulated carbon<br />balance</h4>
+              <div class="note">Plot 07 · 12 months</div>
+              <div class="num">
+                <span id="carbonNum">0</span><span class="unit"> tCO₂e</span>
+              </div>
+              <span class="gain">+2.6 tCO₂e</span
+              ><svg
+                class="spark"
+                viewBox="0 0 220 70"
+                aria-label="Carbon balance trend"
+              >
+                <polyline
+                  id="sparkline"
+                  points="0,60 30,55 60,57 90,44 120,46 150,30 180,24 214,10"
+                  stroke-dasharray="260"
+                  stroke-dashoffset="260"
+                />
+                <circle cx="90" cy="44" r="2.4" />
+                <circle cx="150" cy="30" r="2.4" />
+                <circle class="last" cx="214" cy="10" r="3.4" />
+              </svg>
+              <footer>Q1 · Q2 · Q3 · Q4</footer>
+            </div>
+            <div class="feats" id="feats">
+              <div class="feat">
+                <span class="idx">01</span
+                ><span>Gold-standard observation system</span
+                ><span class="arrow">→</span>
+              </div>
+              <div class="feat">
+                <span class="idx">02</span
+                ><span>World-class atmospheric monitoring (AMRV)</span
+                ><span class="arrow">→</span>
+              </div>
+              <div class="feat">
+                <span class="idx">03</span
+                ><span>Integrated algorithmic processing</span
+                ><span class="arrow">→</span>
+              </div>
+              <div class="feat">
+                <span class="idx">04</span
+                ><span>Blockchain-secured traceability</span
+                ><span class="arrow">→</span>
+              </div>
+              <div class="feat">
+                <span class="idx">05</span
+                ><span>Built for scale and complexity</span
+                ><span class="arrow">→</span>
+              </div>
+            </div>
+          </div>
+          <div class="prog"><i id="progress"></i></div>
+        </div>
+      </section>
+      <section id="sol">
+        <div class="sol-head">
+          <div>
+            <span class="chip">Our solutions</span>
+            <h2>Validating what the ecosystem does naturally</h2>
+          </div>
+          <p>
+            Field sensors, atmospheric flux towers and satellite data fused into
+            one auditable record — so every tonne you report can be traced back
+            to the ground it came from.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="sol-card">
+            <div
+              class="card-bg"
+              style="
+                background-image: url(&quot;https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20261106_025630_9a37a1e0-2547-4973-8160-c75205993914.png&w=1400&q=82&quot;);
+                background-position: 22% 70%;
+                background-size: 260%;
+              "
+            ></div>
+            <div class="card-top">
+              <span class="bracket">[Nature-based solutions]</span
+              ><span class="circle">→</span>
+            </div>
+            <div class="card-copy">
+              <h3>Forest &amp; peatland<br />carbon projects</h3>
+              <p>
+                Continuous flux measurement replaces sampled estimates, so
+                credits reflect what the land actually absorbs.
+              </p>
+            </div>
+          </article>
+          <article class="sol-card">
+            <div
+              class="card-bg"
+              style="
+                background-image: url(&quot;https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20261106_025545_b003e5cc-e68f-4fee-b686-c217a5d81eea.png&w=1400&q=82&quot;);
+                background-position: 50% 50%;
+                background-size: 190%;
+              "
+            ></div>
+            <div class="card-top">
+              <span class="bracket">[Supply chain solutions]</span
+              ><span class="circle">→</span>
+            </div>
+            <div class="card-copy">
+              <h3>Scope 3 sourcing<br />verification</h3>
+              <p>
+                Trace commodities to the plots that grew them, with
+                deforestation-free evidence attached to every shipment.
+              </p>
+            </div>
+          </article>
+          <article class="sol-card">
+            <div
+              class="card-bg"
+              style="
+                background-image: url(&quot;https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20261106_025630_9a37a1e0-2547-4973-8160-c75205993914.png&w=1400&q=82&quot;);
+                background-position: 62% 30%;
+                background-size: 230%;
+              "
+            ></div>
+            <div class="card-top">
+              <span class="bracket">[Biodiversity credits]</span
+              ><span class="circle">→</span>
+            </div>
+            <div class="card-copy">
+              <h3>Living species<br />baselines</h3>
+              <p>
+                Acoustic and eDNA monitoring builds a measurable biodiversity
+                baseline you can report against year over year.
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <strong data-count="1240" data-format="comma">0</strong
+            ><span>Sensors deployed</span>
+          </div>
+          <div class="stat">
+            <strong data-count="38">0</strong><span>Countries monitored</span>
+          </div>
+          <div class="stat">
+            <strong data-count="2.1" data-decimals="1">0</strong
+            ><span>Mt CO₂e verified</span>
+          </div>
+          <div class="stat">
+            <strong data-count="99.4" data-decimals="1">0</strong
+            ><span>% Data uptime</span>
+          </div>
+        </div>
+      </section>
+      <section id="">
+        
+<div class="ace-footer-section">
+    <footer class="ace-footer-main">
+        <div class="container">
+
+            <div class="row">
+
+                <!-- SERVICES -->
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                    <div class="ace-footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Simply dummy text</a></li>
+                            <li><a href="#">The printing and typesetting</a></li>
+                            <li><a href="#">Standard dummy text</a></li>
+                            <li><a href="#">Type specimen book</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- PAGE LINKS -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="ace-footer-column ace-footer-address">
+                        <h4>Page Links</h4>
+                        <ul>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Simply dummy text</a></li>
+                            <li><a href="#">The printing and typesetting</a></li>
+                            <li><a href="#">Standard dummy text</a></li>
+                            <li><a href="#">Type specimen book</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- NEWSLETTER & SOCIAL -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+
+                    <div class="ace-footer-column">
+                        <h4>Subscribe Today</h4>
+
+                        <form action="#" class="ace-footer-newsletter">
+                            <input
+                                type="email"
+                                class="ace-footer-newsletter-input"
+                                placeholder="Enter Email Address"
+                            >
+
+                            <button
+                                type="submit"
+                                class="ace-footer-newsletter-btn"
+                            >
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- SOCIAL LINKS -->
+                    <div class="ace-footer-social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- COPYRIGHT -->
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <p class="ace-footer-copyright">
+                        Copyright © 2026
+                        <a href="#">Frontend Ace</a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</div>
+
+      </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
