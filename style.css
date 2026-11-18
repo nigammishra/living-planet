@@ -1049,7 +1049,10 @@
 
 .ace-footer-main {
     /* background: linear-gradient(105deg, #6e99e6, #093c94); */
-    background: linear-gradient( 163deg, #d0deaf, #30312b);
+    /* background: linear-gradient( 163deg, #d0deaf, #30312b); */
+    /* background: linear-gradient( 163deg, #d0deaf00, #30312b); */
+    background: linear-gradient( 193deg, #d0deaf00, #30312b);
+
     padding: 80px 0 40px;
 }
 
@@ -1095,7 +1098,7 @@
 }
 
 .ace-footer-column ul li a:hover {
-    color: #ff3666;
+    color: #c6f35c;
 }
 
 /* ===== FOOTER ADDRESS ===== */
@@ -1173,7 +1176,7 @@
 }
 
 .ace-footer-newsletter-btn:hover i {
-    color: #ff3666;
+    color: #fff;
 }
 
 /* ===== SOCIAL LINKS ===== */
@@ -1208,8 +1211,8 @@
 }
 
 .ace-footer-social ul li a:hover {
-    background: #ff3666;
-    border-color: #ff3666;
+    background: #c6f35c;
+    border-color: #c6f35c;
     color: #fff;
 }
 
@@ -1230,7 +1233,7 @@
 }
 
 .ace-footer-copyright a:hover {
-    color: #ff3666;
+    color: #c6f35c;
 }
 
 /* ===== RESPONSIVE ===== */
